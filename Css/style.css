@@ -481,6 +481,14 @@ footer a {
 }
 
 @media (width> 1289px) {
+
+    nav .navlinks a {
+        font-size: 27px;
+    }
+
+    a .button{
+        font-size: 27px;
+    }
     
 
     .hero {
