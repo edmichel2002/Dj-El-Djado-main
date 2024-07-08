@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
+    <div id="loading-screen">
+        <video id="loading-video" autoplay muted>
+            <source src="./Videos/animation.mp4" type="video/mp4">
+        </video>
+    </div>
     <header>
         <nav>
             <div class="logo">
@@ -153,5 +158,19 @@
         </p>
         <p>Contact: <a href="tel:+33769955289">+33769955289</a></p>
     </footer>
+    
+    <script>
+        // JavaScript pour cacher l'écran de chargement après 3 secondes avec un effet de fondu
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById('loading-screen').style.opacity = '0';
+                document.getElementById('loading-screen').style.transition = 'opacity 1s';
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 1000); // Attendre la fin de la transition avant de cacher complètement
+            }, 3000);
+        });
+    </script>
+    
 </body>
 </html>
