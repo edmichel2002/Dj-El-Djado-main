@@ -560,7 +560,10 @@ footer a {
 
 
 @media (min-width: 320px) and (max-width: 425px){
-   
+
+    #loading-screen{
+        display: none
+     }
 
     nav.logo{
         display:flex;
